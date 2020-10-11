@@ -1,0 +1,55 @@
+{
+  "name": "codebase-backend",
+  "version": "1.0.0",
+  "description": "Repo for codebase backend",
+  "scripts": {
+    "start": "npm-run-all build server",
+    "server": "node ./bin/index.js",
+    "transpile": "babel ./src --out-dir bin",
+    "clean": "rimraf bin",
+    "build": "npm-run-all clean transpile",
+    "lint": "eslint --fix --ext .js,.jsx .",
+    "test": "jest --runInBand --coverage --testResultsProcessor jest-sonar-reporter",
+    "test:coverage": "jest --runInBand  --forceExit --coverage --testResultsProcessor jest-sonar-reporter "
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "mongoose": "^5.10.2",
+    "npm-run-all": "^4.1.5",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "jest": "^24.9.0",
+    "jest-sonar-reporter": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.5",
+    "@babel/core": "^7.11.5",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.11.5",
+    "nodemon": "^2.0.4",
+    "rimraf": "^3.0.2",
+    "supertest": "^4.0.2",
+    "mongodb-memory-server": "^6.6.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "./src/**"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/src/app",
+      "./src/utils/DBTestUtils.js",
+      "./config",
+      "./src/index",
+      "./src/models",
+      "./src/repositories/queries"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/__tests__/fixtures/",
+      "<rootDir>/src/repositories/queries"
+    ]
+  }
+}

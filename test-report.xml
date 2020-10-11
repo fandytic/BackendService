@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="E:\scrum-poker\__tests__\controllers\UserController.test.js">
+    <testCase name="UserController #fetchUser should call getuser and return status code 200 when invoked" duration="86"/>
+    <testCase name="UserController #fetchUser should call getuser and return status code 500 when failed to fetch data" duration="18"/>
+    <testCase name="UserController #storeUser should call storeUser function and return status code 201 when invoked" duration="360"/>
+    <testCase name="UserController #storeUser should call storeUser and return status code 500 when failed to store data" duration="16"/>
+  </file>
+  <file path="E:\scrum-poker\__tests__\respositories\UserRepository.test.js">
+    <testCase name="UserRespository #findUser should find all meetups when findUses invoked" duration="60047">
+      <failure message="Timeout - Async callback was not invoked within the 30000ms timeout specified by jest.setTimeout.Error: Timeout - Async callback was not invoked within the 30000ms timeout specified by jest.setTimeout."><![CDATA[Timeout - Async callback was not invoked within the 30000ms timeout specified by jest.setTimeout.Error: Timeout - Async callback was not invoked within the 30000ms timeout specified by jest.setTimeout.
+    at mapper (E:\scrum-poker\node_modules\jest-jasmine2\build\queueRunner.js:25:45)
+    at E:\scrum-poker\node_modules\jest-jasmine2\build\queueRunner.js:73:41]]></failure>
+      <failure message=": Timeout - Async callback was not invoked within the 30000ms timeout specified by jest.setTimeout.Timeout - Async callback was not invoked within the 30000ms timeout specified by jest.setTimeout.Error: "><![CDATA[: Timeout - Async callback was not invoked within the 30000ms timeout specified by jest.setTimeout.Timeout - Async callback was not invoked within the 30000ms timeout specified by jest.setTimeout.Error: 
+    at new Spec (E:\scrum-poker\node_modules\jest-jasmine2\build\jasmine\Spec.js:116:22)
+    at new Spec (E:\scrum-poker\node_modules\jest-jasmine2\build\setup_jest_globals.js:80:9)
+    at specFactory (E:\scrum-poker\node_modules\jest-jasmine2\build\jasmine\Env.js:575:24)
+    at Env.it (E:\scrum-poker\node_modules\jest-jasmine2\build\jasmine\Env.js:644:24)
+    at Env.it (E:\scrum-poker\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:132:23)
+    at it (E:\scrum-poker\node_modules\jest-jasmine2\build\jasmine\jasmineLight.js:93:21)
+    at Suite.<anonymous> (E:\scrum-poker\__tests__\respositories\UserRepository.test.js:25:5)
+    at addSpecsToSuite (E:\scrum-poker\node_modules\jest-jasmine2\build\jasmine\Env.js:496:51)
+    at Env.describe (E:\scrum-poker\node_modules\jest-jasmine2\build\jasmine\Env.js:466:11)
+    at describe (E:\scrum-poker\node_modules\jest-jasmine2\build\jasmine\jasmineLight.js:81:18)
+    at Suite.<anonymous> (E:\scrum-poker\__tests__\respositories\UserRepository.test.js:24:3)
+    at addSpecsToSuite (E:\scrum-poker\node_modules\jest-jasmine2\build\jasmine\Env.js:496:51)
+    at Env.describe (E:\scrum-poker\node_modules\jest-jasmine2\build\jasmine\Env.js:466:11)
+    at describe (E:\scrum-poker\node_modules\jest-jasmine2\build\jasmine\jasmineLight.js:81:18)
+    at Object.<anonymous> (E:\scrum-poker\__tests__\respositories\UserRepository.test.js:9:1)
+    at Runtime._execModule (E:\scrum-poker\node_modules\jest-runtime\build\index.js:867:68)]]></failure>
+      <failure message="Timeout - Async callback was not invoked within the 30000ms timeout specified by jest.setTimeout.Error: Timeout - Async callback was not invoked within the 30000ms timeout specified by jest.setTimeout."><![CDATA[Timeout - Async callback was not invoked within the 30000ms timeout specified by jest.setTimeout.Error: Timeout - Async callback was not invoked within the 30000ms timeout specified by jest.setTimeout.
+    at mapper (E:\scrum-poker\node_modules\jest-jasmine2\build\queueRunner.js:25:45)
+    at E:\scrum-poker\node_modules\jest-jasmine2\build\queueRunner.js:73:41]]></failure>
+    </testCase>
+    <testCase name="UserRespository #create should craete user when given data in database" duration="60018">
+      <failure message="Timeout - Async callback was not invoked within the 30000ms timeout specified by jest.setTimeout.Error: Timeout - Async callback was not invoked within the 30000ms timeout specified by jest.setTimeout."><![CDATA[Timeout - Async callback was not invoked within the 30000ms timeout specified by jest.setTimeout.Error: Timeout - Async callback was not invoked within the 30000ms timeout specified by jest.setTimeout.
+    at mapper (E:\scrum-poker\node_modules\jest-jasmine2\build\queueRunner.js:25:45)
+    at E:\scrum-poker\node_modules\jest-jasmine2\build\queueRunner.js:73:41]]></failure>
+      <failure message=": Timeout - Async callback was not invoked within the 30000ms timeout specified by jest.setTimeout.Timeout - Async callback was not invoked within the 30000ms timeout specified by jest.setTimeout.Error: "><![CDATA[: Timeout - Async callback was not invoked within the 30000ms timeout specified by jest.setTimeout.Timeout - Async callback was not invoked within the 30000ms timeout specified by jest.setTimeout.Error: 
+    at new Spec (E:\scrum-poker\node_modules\jest-jasmine2\build\jasmine\Spec.js:116:22)
+    at new Spec (E:\scrum-poker\node_modules\jest-jasmine2\build\setup_jest_globals.js:80:9)
+    at specFactory (E:\scrum-poker\node_modules\jest-jasmine2\build\jasmine\Env.js:575:24)
+    at Env.it (E:\scrum-poker\node_modules\jest-jasmine2\build\jasmine\Env.js:644:24)
+    at Env.it (E:\scrum-poker\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:132:23)
+    at it (E:\scrum-poker\node_modules\jest-jasmine2\build\jasmine\jasmineLight.js:93:21)
+    at Suite.<anonymous> (E:\scrum-poker\__tests__\respositories\UserRepository.test.js:43:5)
+    at addSpecsToSuite (E:\scrum-poker\node_modules\jest-jasmine2\build\jasmine\Env.js:496:51)
+    at Env.describe (E:\scrum-poker\node_modules\jest-jasmine2\build\jasmine\Env.js:466:11)
+    at describe (E:\scrum-poker\node_modules\jest-jasmine2\build\jasmine\jasmineLight.js:81:18)
+    at Suite.<anonymous> (E:\scrum-poker\__tests__\respositories\UserRepository.test.js:42:3)
+    at addSpecsToSuite (E:\scrum-poker\node_modules\jest-jasmine2\build\jasmine\Env.js:496:51)
+    at Env.describe (E:\scrum-poker\node_modules\jest-jasmine2\build\jasmine\Env.js:466:11)
+    at describe (E:\scrum-poker\node_modules\jest-jasmine2\build\jasmine\jasmineLight.js:81:18)
+    at Object.<anonymous> (E:\scrum-poker\__tests__\respositories\UserRepository.test.js:9:1)
+    at Runtime._execModule (E:\scrum-poker\node_modules\jest-runtime\build\index.js:867:68)]]></failure>
+      <failure message="Timeout - Async callback was not invoked within the 30000ms timeout specified by jest.setTimeout.Error: Timeout - Async callback was not invoked within the 30000ms timeout specified by jest.setTimeout."><![CDATA[Timeout - Async callback was not invoked within the 30000ms timeout specified by jest.setTimeout.Error: Timeout - Async callback was not invoked within the 30000ms timeout specified by jest.setTimeout.
+    at mapper (E:\scrum-poker\node_modules\jest-jasmine2\build\queueRunner.js:25:45)
+    at E:\scrum-poker\node_modules\jest-jasmine2\build\queueRunner.js:73:41]]></failure>
+    </testCase>
+  </file>
+  <file path="E:\scrum-poker\__tests__\services\UserService.test.js">
+    <testCase name="UserService #getUser should call findUser when invoked" duration="4"/>
+    <testCase name="UserService #createuser should call createUser when invoked" duration="5"/>
+  </file>
+</testExecutions>

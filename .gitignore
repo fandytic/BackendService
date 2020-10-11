@@ -1,0 +1,11 @@
+.idea/
+
+# Dependency directories
+node_modules/
+bin
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# dotenv environment variables file
+.env
