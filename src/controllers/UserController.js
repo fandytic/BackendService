@@ -13,7 +13,12 @@ const {
 const fetchUser = async (req, res) => {
   try {
     const fetchedUser = await getUser();
-    return res.status(HTTP_STATUS_OK).send(fetchedUser);
+    const data = {
+      'status' : 200,
+      'data' : fetchedUser
+    }
+    console.log(data)
+    return res.status(HTTP_STATUS_OK).send(data);
   } catch (error){
     return res.status(HTTP_STATUS_INTERNAL_SERVER_ERROR).send(error);
   }
