@@ -14,20 +14,29 @@ const fetchUser = async (req, res) => {
   try {
     const fetchedUser = await getUser();
     const data = {
-      'status' : 200,
+      'code' : 200,
+      'message' : 'success',
       'data' : fetchedUser
     }
-    console.log(data)
     return res.status(HTTP_STATUS_OK).send(data);
   } catch (error){
-    return res.status(HTTP_STATUS_INTERNAL_SERVER_ERROR).send(error);
+    const errorStatus = {
+      'code' : 500,
+      'message' : 'Internal Server Error'
+    }
+    return res.status(HTTP_STATUS_INTERNAL_SERVER_ERROR).send(errorStatus);
   }
 };
 
 const storeUser = async (req, res) => {
   try {
     const createdUser = await createUser(req.body);
-    return res.status(HTTP_STATUS_CREATED).send(createdUser);
+    const data = {
+      'code' : 201,
+      'message' : 'success',
+      'data' : createdUser
+    }
+    return res.status(HTTP_STATUS_CREATED).send(data);
   } catch(error){
     return res.status(HTTP_STATUS_INTERNAL_SERVER_ERROR).send(error);
   }
