@@ -7,6 +7,7 @@
     "server": "node ./bin/index.js",
     "transpile": "babel ./src --out-dir bin",
     "clean": "rimraf bin",
+    "rimraf": "./node_modules/rimraf/bin.js",
     "build": "npm-run-all clean transpile",
     "lint": "eslint --fix --ext .js,.jsx .",
     "test": "jest --runInBand --coverage --testResultsProcessor jest-sonar-reporter",
